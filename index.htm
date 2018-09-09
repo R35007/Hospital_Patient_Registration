@@ -1,0 +1,185 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <title>Registration</title>
+   
+</head>
+  <body>
+  <form role="form" name="home" class="form-horizontal">
+  
+ 
+  		<nav class="navbar navbar-inverse navbar-fixed-top">
+    	<div class="container">
+    	<div class="navbar-header">
+    		<a href="#" class="navbar-brand">Community Hospital </a>
+    	
+    		<button type = "button" class = "navbar-toggle"  data-toggle = "collapse" 
+    		data-target = ".navHeaderCollapse">
+    		
+    			 <span class = "icon-bar"></span>
+				 <span class = "icon-bar"></span>
+        		 <span class = "icon-bar"></span>
+				 <span class = "icon-bar"></span>
+                 <span class = "icon-bar"></span>
+    		
+    		</button>
+   		  </div>
+    			<div class="collapse navbar-collapse navHeaderCollapse" >
+    				
+    				<ul class="nav navbar-nav navbar-right">
+						<li><a href = "#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+						<li><a href = "#"><span class="glyphicon glyphicon-book"></span>About us</a></li>
+         				<li><a href = "#"><span class="glyphicon glyphicon-question-sign"></span>Contact Us</a></li>
+                        <li><a href = "#signup" data-toggle="modal"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+						<li><a href = "#signin" data-toggle="modal"><span class="glyphicon glyphicon-plus"></span>Sign In</a></li>
+                        
+					</ul>
+				</div>
+		</div>
+		</nav>
+   		
+   		<div class="modal fade" id="signin"  role="dialog" tabindex="-1">
+   			<div class="modal-dialog" >
+   				<div class="modal-content">
+   					<div class="modal-header">
+   						<h3 class="text-center">Sign In</h3>
+   					</div>
+   					<div class="modal-body" style="padding:20px;">
+                    	 <div>
+                    <img id="profile-img" class="img-responsive img-circle center-block" src="image/userimg.png" style="width:25%" />
+                        
+						</div>                    
+                    	<br>
+                    
+   						<div class="form-group">
+                 			<div class="input-group">
+                  			<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                   			 <input class="form-control" placeholder="Email Address or User Name" type="text" name="lusername">
+               			  </div>
+                   		</div>
+                   		
+                   		
+                   		<div class="form-group">
+                 			<div class="input-group">
+                  			<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                   			 <input class="form-control" placeholder="Password" type="password" name="lpassword">
+               			  </div>
+                   		</div>
+                        
+                         	<input class="checkbox-inline" type="checkbox" value="remember-me"> &nbsp;Remember me                   
+                			<a 
+                            href="#forgetpassword" data-toggle="modal" data-dismiss="modal" class="pull-right need-help">
+                            Forget password?
+                            </a><span class="clearfix"></span>
+                      		<br>
+                         <button class="btn btn-lg btn-primary btn-block"  type="submit" name="button">Log in</button>
+                         <br>
+                        		
+                  	 		
+                        
+                     <div class="text-center">Don't have an Account?&nbsp;&nbsp;&nbsp;<a href="#signup" data-toggle="modal"  data-dismiss="modal">Sign Up</a></div>               
+   					</div>
+   				</div>
+   			</div>
+   		</div>
+    		
+    	<div class="modal fade" id="signup"  role="dialog" tabindex="-1">
+   			<div class="modal-dialog" >
+            	<div class="modal-content">
+   	
+    				<div class="modal-header">
+                  		<h3 class="text-center">Sign Up</h3>
+                    </div>
+     
+                    <div class="modal-body" style="padding:20px;">
+                    	
+                      
+                        <div class="form-group">
+                 			<div class="input-group">
+                  			<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                   			 <input class="form-control" placeholder="Email Address" type="email" name="emailaddr">
+                            
+                   			 </div>
+                   		</div>
+                   		
+                        
+                       
+                          <div class="form-group">
+                 			<div class="input-group">
+                  			<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                   			 <input class="form-control" placeholder="Password" type="password" name="password">
+                             
+                   			 </div>
+                   		</div>
+    					
+                        
+                   		
+                   		<div class="form-group">
+                 			<div class="input-group">
+                  			<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                   			 <input class="form-control" placeholder="Conform Password" type="password" name="cpassword">
+                   			 </div>
+                   		</div>
+                        
+                      <div class="text-center">I Agree to the <a href="">Terms of Service</a>  and <a href="">Privacy Policy</a></div>					
+                        <br>
+                         <button class="btn btn-lg btn-primary btn-block" type="submit" name="caccount">Create Account</button>
+                        
+                        
+                        
+                    </div>
+                          
+                </div>
+            </div>
+    </div>
+         
+      <div class="modal fade" id="forgetpassword"  role="dialog" tabindex="-1">
+   			<div class="modal-dialog" >
+            	<div class="modal-content">
+   	
+    				<div class="modal-header">
+                  		<h3 class="text-center">Forgotten Password</h3>
+                    </div>
+                    <div class="modal-body" style="padding:20px;">
+                    	   
+                           <p align="justify">
+                           To reset your password, enter the email address you use to sign in.
+                           </p>
+                           <div class="form-group">
+                           <label for="fpassword">
+                           		Username or Email address:
+                           </label>
+                            <br>
+                 			<div class="input-group">
+                  			<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                   			 <input class="form-control" placeholder="Email Address or User Name" type="text" id="fpassword"
+                             name="fpassword">
+                   			 </div>
+                             <br>
+                             <div class="text-left"><a href="">Need more help?</a></div>
+                				<br>
+                             <button class="btn btn-lg btn-primary btn-block" type="submit" >Reset Password</button>
+                                
+                   		</div>                 	
+                    </div>
+              </div>
+        </div>
+    </div>        
+         
+
+	<nav class="navbar navbar-inverse navbar-fixed-bottom">
+		<div class="container">
+    		<p class="navbar-text pull-right">If you want to lift yourself up, lift up someone else.</p>
+      </div>
+    </nav>
+</form>    
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  </body>
+</html>
